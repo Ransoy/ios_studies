@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C22302E2060B8ED0038CA34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C22302C2060B8ED0038CA34 /* Main.storyboard */; };
 		1C3FCCAE205F51D10094A265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3FCCAD205F51D10094A265 /* AppDelegate.swift */; };
 		1C3FCCB0205F51D10094A265 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3FCCAF205F51D10094A265 /* ViewController.swift */; };
 		1C3FCCB3205F51D10094A265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C3FCCB1205F51D10094A265 /* Main.storyboard */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C22302D2060B8ED0038CA34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Rating/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C3FCCAA205F51D10094A265 /* Rating.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rating.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3FCCAD205F51D10094A265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C3FCCAF205F51D10094A265 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 		1C3FCCAC205F51D10094A265 /* Rating */ = {
 			isa = PBXGroup;
 			children = (
-				1C22302C2060B8ED0038CA34 /* Main.storyboard */,
 				1C3FCCAD205F51D10094A265 /* AppDelegate.swift */,
 				1C3FCCAF205F51D10094A265 /* ViewController.swift */,
 				1C3FCCB1205F51D10094A265 /* Main.storyboard */,
@@ -259,7 +256,6 @@
 				1C3FCCBB205F51D10094A265 /* LaunchScreen.storyboard in Resources */,
 				1C3FCCB8205F51D10094A265 /* Assets.xcassets in Resources */,
 				1C3FCCB3205F51D10094A265 /* Main.storyboard in Resources */,
-				1C22302E2060B8ED0038CA34 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +324,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1C22302C2060B8ED0038CA34 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C22302D2060B8ED0038CA34 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1C3FCCB1205F51D10094A265 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
