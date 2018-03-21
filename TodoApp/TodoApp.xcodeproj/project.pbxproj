@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1135422062011E000C74F0 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1135412062011E000C74F0 /* TaskCell.swift */; };
 		1C2230452060D5F20038CA34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2230442060D5F20038CA34 /* AppDelegate.swift */; };
 		1C2230472060D5F20038CA34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2230462060D5F20038CA34 /* ViewController.swift */; };
 		1C22304A2060D5F20038CA34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C2230482060D5F20038CA34 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C1135412062011E000C74F0 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		1C2230412060D5F20038CA34 /* TodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2230442060D5F20038CA34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C2230462060D5F20038CA34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				1C2230442060D5F20038CA34 /* AppDelegate.swift */,
 				1C2230462060D5F20038CA34 /* ViewController.swift */,
 				1C2230482060D5F20038CA34 /* Main.storyboard */,
+				1C1135412062011E000C74F0 /* TaskCell.swift */,
 				1C22307D206104F90038CA34 /* EditTodoViewController.swift */,
 				1C22304E2060D5F20038CA34 /* Assets.xcassets */,
 				1C2230502060D5F20038CA34 /* LaunchScreen.storyboard */,
@@ -283,6 +286,7 @@
 				1C2230472060D5F20038CA34 /* ViewController.swift in Sources */,
 				1C22304D2060D5F20038CA34 /* TodoApp.xcdatamodeld in Sources */,
 				1C2230452060D5F20038CA34 /* AppDelegate.swift in Sources */,
+				1C1135422062011E000C74F0 /* TaskCell.swift in Sources */,
 				1C2230782060D9430038CA34 /* TaskData.swift in Sources */,
 				1C22307A2060DA760038CA34 /* TaskListViewController.swift in Sources */,
 			);

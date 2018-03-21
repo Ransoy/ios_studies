@@ -12,18 +12,25 @@ class EditTodoViewController: UIViewController {
     
     var tasklistDelegate: TaskListDelegate?
     var index = 0
-    var taskName = ""
+    var task: Task!
     @IBOutlet weak var editmytask: UITextField!
-    
+    @IBOutlet weak var status: UISwitch!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.editmytask.text = taskName
+        
+        self.editmytask.text = task.taskname
+        self.status.isOn = task.status
+        
+        
+//        self.editmytask.text = taskName
+//        self.status.isOn = task.status
         // Do any additional setup after loading the view.
     }
 
     @IBAction func editMytask(_ sender: UIButton) {
         let editname = editmytask.text ?? ""
-        let task = Task(taskname: editname)
+        let task = Task(taskname: editname, status: status.isOn)
         tasklistDelegate?.edit(task: task, index: index)
         self.navigationController?.popViewController(animated: true)
     }
@@ -36,7 +43,7 @@ class EditTodoViewController: UIViewController {
     @IBAction func cancel(_ sender: UIButton) {
           self.navigationController?.popViewController(animated: true)
     }
-    
+
     /*
     // MARK: - Navigation
 

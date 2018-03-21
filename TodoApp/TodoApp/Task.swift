@@ -10,4 +10,5 @@ import Foundation
 
 struct Task {
     var taskname: String = ""
+    var status: Bool = false
 }

@@ -25,8 +25,6 @@ class TaskListViewController: UITableViewController  {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        debugPrint(tasklist)
         self.tableView.reloadData()
     }
 
@@ -44,18 +42,11 @@ class TaskListViewController: UITableViewController  {
 
    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath)
-        debugPrint(tasklist)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskCell", for: indexPath) as! TaskCell
         // Configure the cell...
-        cell.textLabel?.text = tasklist[indexPath.row].taskname
+        cell.task = tasklist[indexPath.row]
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.index = indexPath.row
-       // self.performSegue(withIdentifier: "seguetoEdit", sender: self)
-    }
-
 
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -106,26 +97,27 @@ class TaskListViewController: UITableViewController  {
         }
         
         if segue.identifier == "seguetoEdit", let vc = segue.destination as? EditTodoViewController {
+            self.index = self.tableView.indexPathForSelectedRow?.row ?? 0
             vc.tasklistDelegate = self
             vc.index = self.index
-            vc.taskName = tasklist[self.index].taskname
+            vc.task = tasklist[self.index]
         }
     }
 }
 
 extension TaskListViewController: TaskListDelegate {
+    func updateStatus(stat: Bool) {
+        self.tasklist[index].status = stat
+        self.tableView.reloadData()
+    }
+    
     func addTask(task: Task) {
         self.tasklist.append(task)
         self.tableView.reloadData()
     }
     
     func edit(task: Task, index: Int) {
-          self.tasklist[index] = task
-        self.tableView.reloadData()
-    }
-    func delete(index: Int) {
-         debugPrint("delete ni")
-        self.tasklist.remove(at: index)
+        self.tasklist[index] = task
         self.tableView.reloadData()
     }
 }

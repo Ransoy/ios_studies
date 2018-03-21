@@ -18,7 +18,7 @@ class TaskAddtoDoViewController: UIViewController {
         
         let taskName = taskname.text ?? ""
         
-        let task = Task(taskname: taskName)
+        let task = Task(taskname: taskName, status: false)
         self.taskListDelegate?.addTask(task: task)
         self.dismiss(animated: true)
     }

@@ -21,5 +21,4 @@ class TaskData {
 protocol TaskListDelegate: class {
     func addTask(task: Task)
     func edit(task: Task,index: Int)
-    func delete(index: Int)
 }
